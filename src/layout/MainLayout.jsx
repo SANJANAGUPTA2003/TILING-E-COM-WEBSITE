@@ -29,35 +29,30 @@ export default function MainLayout() {
             <NavLink
               to="/"
               end
-              style={navLinkText}
               className={({ isActive }) => (isActive ? "main-nav-link active" : "main-nav-link")}
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
-              style={navLinkText}
               className={({ isActive }) => (isActive ? "main-nav-link active" : "main-nav-link")}
             >
               About
             </NavLink>
             <NavLink
               to="/services"
-              style={navLinkText}
               className={({ isActive }) => (isActive ? "main-nav-link active" : "main-nav-link")}
             >
               Services
             </NavLink>
             <NavLink
               to="/projects"
-              style={navLinkText}
               className={({ isActive }) => (isActive ? "main-nav-link active" : "main-nav-link")}
             >
               Projects
             </NavLink>
             <NavLink
               to="/contact"
-              style={navLinkText}
               className={({ isActive }) => (isActive ? "main-nav-link active nav-cta-link" : "main-nav-link nav-cta-link")}
             >
               Contact
@@ -134,13 +129,13 @@ const topBarContact = {
 };
 
 const nav = {
-  minHeight: "84px",
-  background: "linear-gradient(130deg,rgb(103, 112, 132) 0%, #1e293b 52%, #0f172a 100%)",
+  minHeight: "66px",
+  background: "linear-gradient(130deg, #0f172a 0%, #1e293b 52%, #0f172a 100%)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  padding: "10px 0",
-  borderBottom: "1px solid rgba(148, 163, 184, 0.28)",
+  padding: "4px 0",
+  borderBottom: "none",
   boxShadow: "0 10px 28px rgba(15, 23, 42, 0.3)",
   position: "sticky",
   top: 0,
@@ -151,30 +146,30 @@ const nav = {
 const navInner = {
   width: "100%",
   maxWidth: "none",
-  borderRadius: "14px",
-  border: "1px solid rgba(255, 255, 255, 0.08)",
-  background: "rgba(15, 23, 42, 0.48)",
-  backdropFilter: "blur(10px)",
+  borderRadius: 0,
+  border: "none",
+  background: "transparent",
+  backdropFilter: "none",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  gap: "16px",
-  flexWrap: "nowrap",
-  padding: "0 clamp(14px, 3vw, 34px)"
+  gap: "8px",
+  flexWrap: "wrap",
+  padding: "0 clamp(10px, 2vw, 24px)"
 };
 
 const logoWrap = {
   display: "flex",
   alignItems: "center",
-  gap: "10px",
-  minHeight: "64px"
+  gap: "8px",
+  minHeight: "52px"
 };
 
 const logoBadge = {
-  borderRadius: "12px",
+  borderRadius: "10px",
   background: "linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)",
   border: "1px solid rgba(255, 255, 255, 0.3)",
-  padding: "5px 8px",
+  padding: "4px 7px",
   boxShadow: "0 8px 18px rgba(15, 23, 42, 0.35)",
   display: "flex",
   alignItems: "center",
@@ -182,7 +177,7 @@ const logoBadge = {
 };
 
 const logo = {
-  height: "clamp(44px, 6vw, 60px)",
+  height: "clamp(34px, 4.5vw, 46px)",
   width: "auto",
   maxWidth: "min(34vw, 160px)",
   objectFit: "contain",
@@ -192,7 +187,7 @@ const logo = {
 const brandTextWrap = {
   display: "grid",
   textAlign: "left",
-  gap: "2px"
+  gap: "1px"
 };
 
 const brandName = {
@@ -200,12 +195,12 @@ const brandName = {
   color: "#f8fafc",
   fontWeight: 800,
   letterSpacing: "0.03em",
-  fontSize: "clamp(14px, 1.5vw, 18px)"
+  fontSize: "clamp(12px, 1.2vw, 16px)"
 };
 const brandSub = {
   margin: 0,
   color: "rgba(255, 255, 255, 0.82)",
-  fontSize: "clamp(15px, 1.1vw, 12px)",
+  fontSize: "clamp(9px, 0.95vw, 11px)",
   letterSpacing: "0.06em",
   textTransform: "uppercase",
   fontWeight: 600
@@ -215,15 +210,11 @@ const navLinks = {
   marginLeft: "auto",
   display: "flex",
   alignItems: "center",
-  gap: "20px",
-  flexWrap: "wrap"
-};
-
-const navLinkText = {
-  color: "#ffffff",
-  fontWeight: 800,
-  fontSize: "18px",
-  textDecoration: "none"
+  justifyContent: "flex-end",
+  gap: "18px",
+  rowGap: "6px",
+  flexWrap: "wrap",
+  width: "100%"
 };
 
 const footer = {
@@ -284,7 +275,7 @@ const btn = {
 const btnAlt = {
   ...btn,
   background: "transparent",
-  border: "1px solidrgb(17, 37, 46)"
+  border: "1px solid rgb(17, 37, 46)"
 };
 
 const copyright = {
