@@ -81,7 +81,7 @@ export default function Home() {
 
         {/* WHAT WE OFFER */}
         <motion.div style={card} variants={fadeUp} whileHover={{ scale: 1.02, y: -4 }}>
-          <h2>What We Offer</h2>
+          <h2 style={sectionHeadingBlue}>What We Offer</h2>
 
           <ul style={list}>
             <li>Wall Tiling</li>
@@ -261,6 +261,10 @@ const pageSection = {
 const sectionTitle = {
   marginBottom: "18px",
   fontSize: "clamp(1.6rem, 3.2vw, 2.2rem)",
+  color: "#0f172a"
+};
+
+const sectionHeadingBlue = {
   color: "#0f172a"
 };
 

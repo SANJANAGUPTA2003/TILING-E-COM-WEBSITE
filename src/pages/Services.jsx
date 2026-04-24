@@ -57,6 +57,7 @@ const title = {
   fontSize: "clamp(2.3rem, 5vw, 3.5rem)",
   marginBottom: "12px",
   fontWeight: 800,
+  color: "#0f172a",
   textTransform: "uppercase",
   letterSpacing: "0.04em"
 };

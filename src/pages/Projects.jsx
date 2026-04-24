@@ -75,6 +75,7 @@ const title = {
   marginBottom: "12px",
   fontSize: "clamp(2.3rem, 5vw, 3.5rem)",
   fontWeight: 800,
+  color: "#0f172a",
   textTransform: "uppercase",
   letterSpacing: "0.04em"
 };
