@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const pageHighlights = [
   {
@@ -50,6 +50,8 @@ const staggerContainer = {
 };
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <section style={wrapper}>
       <motion.div
@@ -92,7 +94,7 @@ export default function Home() {
             <li>Waterproofing</li>
           </ul>
 
-          <button style={btn} onClick={() => (window.location.href = "/contact")}>
+          <button type="button" style={btn} onClick={() => navigate("/contact")}>
             Get a Quote
           </button>
         </motion.div>

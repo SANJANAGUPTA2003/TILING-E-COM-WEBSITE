@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
+
   return (
     <section style={wrapper}>
       <h1 style={title}>OUR SERVICES</h1>
@@ -23,7 +26,7 @@ export default function Services() {
             <li>Waterproofing</li>
           </ul>
 
-          <button style={btn} onClick={()=>window.location.href="/contact"}>
+          <button type="button" style={btn} onClick={() => navigate("/contact")}>
             Get a Quote
           </button>
         </motion.div>
@@ -75,16 +78,17 @@ const grid = {
 };
 
 const card = {
-  background: "white",
+  background: "#0f172a",
   padding: "30px",
   borderRadius: "12px",
   textAlign: "left",
-  boxShadow: "0 10px 25px rgba(0,0,0,0.08)"
+  boxShadow: "0 10px 25px rgba(15, 23, 42, 0.25)",
+  color: "#f8fafc"
 };
 
 const cardDark = {
-  background: "#0f172a",
-  color: "white",
+  background: "#0e2027",
+  color: "#f8fafc",
   padding: "30px",
   borderRadius: "12px",
   textAlign: "left"
@@ -92,7 +96,8 @@ const cardDark = {
 
 const list = {
   marginTop: "20px",
-  lineHeight: "2"
+  lineHeight: "2",
+  color: "#cbd5e1"
 };
 
 const listWhite = {
@@ -102,7 +107,7 @@ const listWhite = {
 
 const btn = {
   marginTop: "20px",
-  background: "#38bdf8",
+  background: "#0ea5e9",
   padding: "10px 20px",
   border: "none",
   color: "white",
